@@ -1,17 +1,21 @@
 {
   "name": "project-alfa-package",
   "private": true,
+  "homepage": "https://9526543.github.io/ghtest2",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router": "^7.4.0",
+    "sass": "^1.86.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

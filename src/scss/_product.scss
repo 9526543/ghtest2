@@ -1,0 +1,36 @@
+.product-block {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  max-width: 360px;
+
+  &__header {
+    font-size: 18px;
+    font-weight: 700;
+    padding-block: 10px;
+    height: 70px;
+  }
+  &__image {
+    padding-block: 10px;
+    height: 200px;
+  }
+  &__description {
+    height: 105px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__icons {
+    margin-top: 10px;
+    svg {
+      width: 35px;
+      height: 35px;
+      fill: black;
+      margin-right: 20px;
+      cursor: pointer;
+      &.active {
+        fill: red;
+      }
+    }
+  }
+}
